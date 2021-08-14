@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="102" id="KGk-i7-Jjw" customClass="ChannelsS1C1" customModule="ChatApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325.5" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="ZuZ-a4-Qps">
+                        <rect key="frame" x="16" y="26" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="0MD-Pl-DVg"/>
+                            <constraint firstAttribute="width" constant="50" id="ZLE-7G-EVU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw1-Od-MNQ">
+                        <rect key="frame" x="71" y="18" width="247.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="OSG-os-9Uc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RPj-yO-yjE">
+                        <rect key="frame" x="71" y="40.5" width="247.5" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Yh4-Dz-CHr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Members 10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2IY-5B-odD">
+                        <rect key="frame" x="71" y="72.5" width="137.5" height="19.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today 15:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnP-X9-zWH">
+                        <rect key="frame" x="218.5" y="72.5" width="100" height="19.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="W4Y-sE-mTH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZuZ-a4-Qps" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8Su-Lo-fM5"/>
+                    <constraint firstItem="qnP-X9-zWH" firstAttribute="leading" secondItem="2IY-5B-odD" secondAttribute="trailing" constant="10" id="AuI-JH-NiA"/>
+                    <constraint firstItem="RPj-yO-yjE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Kuf-g8-weF"/>
+                    <constraint firstAttribute="trailing" secondItem="RPj-yO-yjE" secondAttribute="trailing" constant="7" id="PJt-eD-Kfg"/>
+                    <constraint firstAttribute="trailing" secondItem="Zw1-Od-MNQ" secondAttribute="trailing" constant="7" id="a2K-qG-mBV"/>
+                    <constraint firstAttribute="trailing" secondItem="qnP-X9-zWH" secondAttribute="trailing" constant="7" id="bwj-JP-5CW"/>
+                    <constraint firstAttribute="bottom" secondItem="qnP-X9-zWH" secondAttribute="bottom" constant="10" id="dL1-nP-bWs"/>
+                    <constraint firstItem="Zw1-Od-MNQ" firstAttribute="leading" secondItem="ZuZ-a4-Qps" secondAttribute="trailing" constant="5" id="dPY-i0-NZt"/>
+                    <constraint firstItem="Zw1-Od-MNQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="efX-0H-t3Y"/>
+                    <constraint firstItem="2IY-5B-odD" firstAttribute="leading" secondItem="ZuZ-a4-Qps" secondAttribute="trailing" constant="5" id="fV4-BF-p8w"/>
+                    <constraint firstAttribute="bottom" secondItem="2IY-5B-odD" secondAttribute="bottom" constant="10" id="l5f-zy-mDG"/>
+                    <constraint firstItem="RPj-yO-yjE" firstAttribute="leading" secondItem="ZuZ-a4-Qps" secondAttribute="trailing" constant="5" id="wWm-de-zmJ"/>
+                    <constraint firstItem="ZuZ-a4-Qps" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xVd-h3-27s"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="aboutLabel" destination="RPj-yO-yjE" id="l7g-Tj-CUJ"/>
+                <outlet property="avatarImageView" destination="ZuZ-a4-Qps" id="3Fu-sO-kft"/>
+                <outlet property="lastMessageDateLabel" destination="qnP-X9-zWH" id="u53-jg-Ze8"/>
+                <outlet property="membersCountLabel" destination="2IY-5B-odD" id="Adm-Ju-wnF"/>
+                <outlet property="nameLabel" destination="Zw1-Od-MNQ" id="ldp-DU-9dv"/>
+            </connections>
+            <point key="canvasLocation" x="163.04347826086959" y="92.410714285714278"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar" width="184" height="184"/>
+    </resources>
+</document>
